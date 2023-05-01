@@ -8,6 +8,10 @@
     justify-content: center;
 }
 
+.timetable__container {
+    transform: translateY(30px);
+}
+
 .timetable__block {
     display: flex;
     align-items: center;
@@ -15,6 +19,7 @@
 
 .day__link {
     height: 60px;
+    font-size: calc(14px + (2 + 2 * 0.7) * ((100vw - 375px) / 1920));
 }
 
 .day__active {
@@ -26,22 +31,22 @@
     font-family: 'Montserrat';
     font-weight: 400;
     color: #020202;
-    font-size: calc(23px + (5 + 5 * 0.7) * ((100vw - 375px) / 1920));
+    font-size: calc(16px + (12 + 12 * 0.7) * ((100vw - 375px) / 1920));
 }
 
 .time {
     font-family: 'Montserrat';
     font-weight: 300;
-    font-size: calc(16px + (4 + 4 * 0.7) * ((100vw - 375px) / 1920));
+    font-size: calc(14px + (6 + 6 * 0.7) * ((100vw - 375px) / 1920));
     color: #020202;
 }
 
 .discipline,
 .teacher {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', 'sans-serif';
     font-weight: 300;
-    font-size: 18px;
     color: #020202;
+    font-size: calc(15px + (3 + 3 * 0.7) * ((100vw - 375px) / 1920));
 }
 
 @media screen and (max-width: 768px) {

@@ -249,10 +249,11 @@
         opacity: 0;
         transition: opacity .2s;
         margin: 0;
-        position: absolute;
-        left: -16px;
-        right: -16px;
-        top: 27px;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
         height: 100vh;
         background: rgba(2, 2, 2, 0.85);
         border-radius: 0;
@@ -260,12 +261,12 @@
     }
 
     .navbar__active > .navbar-collapse > .navbar-nav {
-        transform: translateY(-103%);
+        transform: translateY(0);
     }
 
     .navbar-nav {
         transition: transform .5s;
-        transform: translateY(-200%);
+        transform: translateY(-100%);
         background: #F5FAFF;
         border-radius: 0 0 50px 50px;
         padding: 40px 33px 20px 33px;
@@ -273,6 +274,9 @@
         flex-direction: column;
         justify-content: flex-start;
         margin: 0;
+        position: absolute;
+        top: 0;
+
     }
 
     .nav-item-hidden {
@@ -290,5 +294,6 @@
         padding: 10px 0;
         border-radius: 20px;
     }
+
 }
 
